@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../style'
 import { projects } from '../constants'
 import { github } from '../assets'
+import "./css/project.css"
 import { fadeIn, textVariant } from '../utils/motion'
 
 const ProjectCard = ({index, name , description , tags , image, source_code_link }) => {
@@ -17,13 +18,14 @@ return (
       speed: 450,
     }} className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
       <div className='relative  w-full h-[200px]'>
-        <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
-        <div className='absolute inset-0 flex justify-end m-3  card-img_hover '>
+        <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl gallery ' />
+        <div className='inset-0 flex items-center justify-center m-3 gallery-links card-img_hover'>
           <div 
             onClick={() => window.open(source_code_link, '_blank')}
             className='black-gradient rounded-full w-10 h-10 flex justify-center items-center cursor-pointer'>
-            <img src={github} alt='github' className='w-3/4 h-3/4 object-contain' />
+             <a className="preview-link items-center hover:text-white"><i className="bx bx-link-external"></i></a>
             </div>
+           
           </div>
         </div>
         <div className='mt-5 py-2'>
@@ -32,7 +34,7 @@ return (
         </div>
         <div className='mt-4 flex flex-wrap gap-3 '>
           {tags.map((tag, index) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={tag.name} index={index}className={`text-[14px] ${tag.color}`}>
               {tag.name}
             </p>
           ))}
