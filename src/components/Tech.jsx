@@ -1,6 +1,6 @@
 import React from 'react'
 import {BallCanvas} from './canvas'
-
+import { SectionWrapper } from '../hoc'
 import { motion } from 'framer-motion'
 import { textVariant } from '../utils/motion'
 import { styles } from '../style'
@@ -11,7 +11,7 @@ import { technologies } from '../constants'
 const Tech = () => {
   return (
    <> 
-       <motion.div className='my-10' variants={textVariant()}>
+       <motion.div className='my-10 ' variants={textVariant()}>
  
     <h2 className={styles.sectionHeadText + " text-center"}>Skills.</h2>
   </motion.div>

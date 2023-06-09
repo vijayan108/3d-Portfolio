@@ -15,8 +15,8 @@ return (
     <Tilt options={{
       max: 45,
       scale: 1,
-      speed: 450,
-    }} className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
+      speed: 300,
+    }} className='bg-tertiary  p-5 rounded-2xl sm:w-[360px] '>
       <div className='relative  w-full h-[200px]'>
         <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl gallery ' />
         <div className='inset-0 flex items-center justify-center m-3 gallery-links card-img_hover'>
@@ -48,12 +48,12 @@ return (
 const Works = () => {
   return (
     <>
-      <motion.div className=' mt-28 mb-10' variants={textVariant()}>
+      <motion.div className=' mt-28  mb-10' variants={textVariant()}>
         <p className={styles.sectionSubText + ' text-center'}>What I have done</p>
         <h2 className={styles.sectionHeadText + ' text-center'}>Project.</h2>
       </motion.div>
 
-      <div className='w-full flex flex-col'>
+      <div className='w-full max-w-8xl mx-auto  relative z-0 flex flex-col '>
         <motion.p variants={fadeIn("","",0.1,1)}
         className='mt-3 text-secondary text-[17px] max-w-8xl text-center leading-[30px] ' >
                Following projects showcases my skills and experience through
@@ -62,7 +62,7 @@ const Works = () => {
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </motion.p>
-        <div className='flex  justify-center items-center flex-wrap mt-20 gap-9'>
+        <div className='flex justify-center items-center flex-wrap mt-20 gap-x-16 gap-y-10'>
           {projects.map((project, index) => (
             <ProjectCard key={`projec-${index}`} {...project} index={index} />
           ))}
@@ -72,4 +72,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default Works
