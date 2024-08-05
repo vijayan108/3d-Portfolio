@@ -42,6 +42,10 @@ import chatgpt from "./project/chatgpt.png"
 import hotstar from "./project/hotstar.png"
 import hack from "./project/hack.jpg"
 
+import InstaXpert from "./clients/InstaXpert.png"
+import Plainclothing from "./clients/Plainclothing.png"
+import Playercoach from "./clients/Playercoach.png"
+
 import Resume from "./Resume/Resume.pdf"
 
 export {
@@ -85,5 +89,8 @@ export {
   chatgpt,
   hotstar,
   hack,
-  Resume
+  Resume,
+  InstaXpert,
+  Plainclothing,
+  Playercoach
 };

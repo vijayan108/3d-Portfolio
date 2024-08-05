@@ -30,10 +30,13 @@ import {
   engineerhub,
   sna,
   hack,
+  InstaXpert,
+  Plainclothing,
+  Playercoach,
 } from "../assets";
 
 // Set your start date in the format "YYYY-MM-DD"
-const startDate = "2022-01-01";
+const startDate = "2023-01-01";
 
 // Calculate the difference between the start date and today's date
 const diffInMs = Date.now() - new Date(startDate).getTime();
@@ -342,8 +345,24 @@ const projects = [
     source_code_link: "https://github.com/vijayan108/SRS-Blog",
   },
   
-  
+
 
 ];
 
-export { services, technologies, experiences, testimonials, projects, hero };
+
+const client = [
+  {
+    alt: "InstaXpert",
+    image: InstaXpert,
+  },
+  {
+    alt: "Plainclothing",
+    image: Plainclothing,
+  },
+  {
+    alt: "Playercoach",
+    image: Playercoach,
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, hero , client};
