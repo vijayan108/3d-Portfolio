@@ -72,7 +72,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frappe and ERPNext Developer",
     icon: mobile,
   },
   {

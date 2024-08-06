@@ -2,7 +2,7 @@
 .client-img{
     width: 100px;
     height: 100px;
-    animation: scroll 60s linear infinite;
+    animation: scroll 1s linear infinite;
 }
 
 .slide-track {

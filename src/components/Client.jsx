@@ -17,4 +17,4 @@ function Client() {
   );
 }
 
-export default SectionWrapper(Client, "client");
+export default SectionWrapper(Client);
