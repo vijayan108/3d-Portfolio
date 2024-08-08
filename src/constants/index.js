@@ -33,6 +33,7 @@ import {
   InstaXpert,
   Plainclothing,
   Playercoach,
+  Forkids6,
 } from "../assets";
 
 // Set your start date in the format "YYYY-MM-DD"
@@ -149,7 +150,7 @@ const experiences = [
     company_name: "engineerhub",
     icon: engineerhub,
     iconBg: "#138382",
-    date: "June 2021 - Present",
+    date: "Jan 2022 - Dec 2022",
     points: [
       "Guided numerous students towards a career in cybersecurity by providing them with valuable resources and mentorship.",
       "Created engaging content for the company's social media platforms to increase brand awareness and attract potential students.",
@@ -179,9 +180,11 @@ const experiences = [
     points: [
       "Developed vulnerability labs using Docker containerization, providing students with a secure and isolated environment for hands-on learning",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developed and maintained the Frappe framework for the Academy, ensuring a robust and scalable foundation for  various applications and services. ",
+      "Experienced with Frappe and ERPNext , implementing and customizing solutions to meet the specific needs of the Academy, including enhancing functionality and streamlining processes. ",
       "Developed a new web app for the edtech portfolio, enhancing the user experience and expanding the company's product offerings..",
       "Participating in code reviews and providing constructive feedback to other developers.",
-      "Assisted students with technical issues, ensuring a smooth learning experience and fostering their growth in the field.",
+      "Assisted students with technical issues, ensuring a smooth learning experience and fostering their growth in the field."
     ],
   },
 ];
@@ -362,6 +365,10 @@ const client = [
   {
     alt: "Playercoach",
     image: Playercoach,
+  },
+  {
+    alt: "Forkids6",
+    image: Forkids6,
   },
 ];
 

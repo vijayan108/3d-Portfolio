@@ -45,6 +45,7 @@ import hack from "./project/hack.jpg"
 import InstaXpert from "./clients/InstaXpert.png"
 import Plainclothing from "./clients/Plainclothing.png"
 import Playercoach from "./clients/Playercoach.png"
+import Forkids6 from "./clients/Forkids6.png"
 
 import Resume from "./Resume/Resume.pdf"
 
@@ -92,5 +93,6 @@ export {
   Resume,
   InstaXpert,
   Plainclothing,
-  Playercoach
+  Playercoach,
+  Forkids6
 };
